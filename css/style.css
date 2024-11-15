@@ -106,10 +106,11 @@ h2, h3 {
 .apex-body {
     background-color: #1a1a1a;
     color: #fff;
+    padding: 20px;
 }
 
 .apex-header {
-    background-color: #800080; 
+    background-color: #800080;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -133,7 +134,7 @@ h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 300px;
     height: 400px;
-    border: 5px solid #800080; 
+    border: 5px solid #800080;
 }
 
 .gameplay-tips {
@@ -143,7 +144,45 @@ h2, h3 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #fff;
-    clear: both; 
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .legend-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gameplay-tips {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .apex-header {
+        font-size: 1.5rem;
+    }
+
+    .legend-info img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .resume-body {
@@ -203,4 +242,80 @@ ul {
     .car-video iframe {
         max-width: 100%;
     }
+}
+
+.map-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.slider-container {
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+}
+
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #ff5722;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff5722;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background: #ff4081;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #ff4081;
+}
+
+
+.slider-label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+    color: #333;
 }
